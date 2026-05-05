@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRL Twitch Chat</title>
+
   <style>
     html, body {
       margin: 0;
@@ -14,16 +17,21 @@
 
     iframe {
       position: fixed;
-      right: 0;
-      bottom: 0;
+      right: 20px;
+      bottom: 80px;
       width: 420px;
       height: 750px;
       border: none;
       background: transparent;
+      overflow: hidden;
     }
   </style>
 </head>
+
 <body>
-  <iframe src="https://giambaj.it/twitch/jchat/v2/?channel=elpannch0&size=1&font=1&animate=true&fade=30&hide_commands=true&shadow=1"></iframe>
+  <iframe
+    src="https://giambaj.it/twitch/jchat/v2/?channel=elpannch0&size=1&font=1&animate=true&fade=30&hide_commands=true&shadow=1&showbots=false"
+    allowtransparency="true">
+  </iframe>
 </body>
 </html>
